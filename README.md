@@ -2,5 +2,8 @@
 my python files
 =========
 
-just dance
+i wanna die
 --------
++ Sonia
++ Olya
++ Park Jimin

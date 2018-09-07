@@ -11,3 +11,4 @@ i wanna die
 shriftami budesh
 ************
 igratsya na svoem mogilnom kamne
+[lol](https://lms.hse.ru/?gb)

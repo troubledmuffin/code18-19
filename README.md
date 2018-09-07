@@ -8,3 +8,6 @@ i wanna die
 + **Olya**
 + ***Yana Emilievna Ohapkena***
 
+shriftami budesh
+************
+igratsya na svoem mogilnom kamne

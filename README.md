@@ -4,6 +4,7 @@ my python files
 
 i wanna die
 --------
-+ Sonia
-+ Olya
-+ Park Jimin
++ *Sonia*
++ **Olya**
++ ***Yana Emilievna Ohapkena***
+

@@ -151,13 +151,13 @@ elif a == '3':
       litterms = text.split('\n')
       word = random.choice(litterms)
 word_list = list(word)
-guesses = []
-dashes = len(word) * '_'	
+dashes = len(word) * '_'
+	
 dashlist = list(dashes) 
 newdashlist = list(dashes)
 print('Угадайте слово.')
 print (' '.join(dashlist))
-for d in range(10):
+for i in range(10):
     guess = input('Введите 1 букву: ')
     if guess not in 'абвгдеёжзиклмнопрстуфхцчшщъыьэюя':
         print ('Что вам непонятно в слове "букву"?')
@@ -169,7 +169,6 @@ for d in range(10):
         if guess not in word:
             print ('Одна ошибка и вы ошиблись.')
             print(' '.join(dashlist))
-            
 ##            for l in hangman:
 ##                print(l)
         else:
@@ -177,15 +176,7 @@ for d in range(10):
                 if guess == word[i]:
                     dashlist[i] = word_list[i]
             print(' '.join(dashlist))
-        if guess in guesses:
-            print('Вы это уже загадывали.')
-            print(' '.join(dashlist))
-    if d == 3 or d == 2:
-        print("Осталось", d , "попытки")
-    elif d == 1:
-        print("Осталась", d , "попытка")
-    else:
-        print("Осталось", d , "попыток")
+    print("Осталось", i , "попыток")
     if dashlist == word_list:
         print('Вы выиграли!(зачем вы только что потратили на это время...)')
         break

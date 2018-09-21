@@ -151,13 +151,13 @@ elif a == '3':
       litterms = text.split('\n')
       word = random.choice(litterms)
 word_list = list(word)
-dashes = len(word) * '_'
-	
+guesses = []
+dashes = len(word) * '_'	
 dashlist = list(dashes) 
 newdashlist = list(dashes)
 print('Угадайте слово.')
 print (' '.join(dashlist))
-for i in range(10):
+for d in range(10):
     guess = input('Введите 1 букву: ')
     if guess not in 'абвгдеёжзиклмнопрстуфхцчшщъыьэюя':
         print ('Что вам непонятно в слове "букву"?')
@@ -169,6 +169,7 @@ for i in range(10):
         if guess not in word:
             print ('Одна ошибка и вы ошиблись.')
             print(' '.join(dashlist))
+            
 ##            for l in hangman:
 ##                print(l)
         else:
@@ -176,7 +177,29 @@ for i in range(10):
                 if guess == word[i]:
                     dashlist[i] = word_list[i]
             print(' '.join(dashlist))
-    print("Осталось", i , "попыток")
+        if guess in guesses:
+            print('Вы это уже загадывали.')
+            print(' '.join(dashlist))
+    if d == 0:
+        print('Осталось 9 попыток')
+    if d == 1:
+        print('Осталось 8 попыток')
+    if d == 2:
+        print('Осталось 7 попыток')
+    if d == 3:
+        print('Осталось 6 попыток')
+    if d == 4:
+        print('Осталось 5 попыток')
+    if d == 5:
+        print('Осталось 4 попыток')
+    if d == 6:
+        print('Осталось 3 попыток')
+    if d == 7:
+        print('Осталось 2 попыток')
+    if d == 8:
+        print('Осталось 1 попыток')
+    if d == 9:
+        print('Попытки закончились')
     if dashlist == word_list:
         print('Вы выиграли!(зачем вы только что потратили на это время...)')
         break

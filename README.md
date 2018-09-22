@@ -6,7 +6,6 @@ i wanna die
 --------
 + *Sonia*
 + **Olya**
-+ ***Yana Emilievna Ohapkena***
 
 shriftami budesh
 ************
@@ -33,4 +32,4 @@ i will fail this class and here is why
         else:
             print ('earlier')
 **************
-sonia goldina sasatb
+

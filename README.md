@@ -14,6 +14,6 @@
   <tr>
     <td> 1 </td>
      <td> Виселица </td>
-    <td> <a href='code18-19/hw1/hw2.1.2.py'> </a> </td>
+    <td> <a href="./hw1/hw2.1.2.py"> </a> </td>
   </tr>
 </table>

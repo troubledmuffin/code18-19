@@ -28,18 +28,18 @@ def download_page(pageUrl):
             clean_a = regSpace1.sub("", a)
             clean_a = regTag1.sub("", clean_a)
             clean_a = clean_a.replace("Автор: ", "")
-##            clean_a = regDescr1.sub("", clean_a)
+
      
         regDate = re.compile('<span class="modified">.*?</span>', flags= re.DOTALL)
         date = regDate.findall(text)
         regTag1 = re.compile('<.*?>', re.DOTALL)
         regSpace1 = re.compile('\s{2,}', re.DOTALL)
-##        regDescr1 = re.compile('Обновлено ', re.DOTALL)
+
         for d in date:
             clean_d = regSpace1.sub("", d)
             clean_d = regTag1.sub("", clean_d)
             clean_d = clean_d.replace("Обновлено ", "")
-##            clean_d = regDescr1.sub("", clean_d)
+
     
  
         regText = re.compile("""<p style="text-align: justify;">.*?</p>""", flags= re.DOTALL)
@@ -63,13 +63,7 @@ def download_page(pageUrl):
             f.write(l)
 
             
-            
-##        print('@au', clean_a)
-##
-##        print('@ti', clean_t)
-##
-##        print('@da', clean_d)
-
+   
 
     
     
@@ -82,11 +76,7 @@ def download_page(pageUrl):
         with open('newspaper/metadata14.csv', 'a',encoding="utf-8") as f:
             f.write('\t'.join(fieldnames) + '\n')
             f.write(data + '\n')
-##        with open('article.txt', 'w', encoding="utf-8") as f:
 
-##            f.write('@url', pageUrl)
-##            f.write('\n')
-##            f.write(clean_p)
 
     except:
         print('Error at', pageUrl)

@@ -99,7 +99,7 @@ def download_page(pageUrl):
 commonUrl = 'http://ropravda.ru/index.php/'
 cat = ['roslavl-i-roslavlchane','delovaya-zhizn', 'mestnoe-samoupravlenie', 'selo-rodnoe', 'obrazovanie', 'kultura', 'sport', 'kraevedenie', 'roslavl-pravoslavnyj', 'tvorchestvo-nashikh-zemlyakov', 'proisshestviya', 'sotsialnaya-sfera', 'raznoe']
 for c in cat:
-    for i in range(1, 600):
+    for i in range(1000, 1600):
         pageUrl = commonUrl + c + '/'+ str(i) 
         download_page(pageUrl)
 

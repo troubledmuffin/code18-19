@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Услышала я сегодня на улице...</title>
+</head>
+<body>
+<form action="http://127.0.0.1:5000/thanks" method = 'POST'>
+    <fieldset>
+        <legend><b>Опрос про колоссальность</b></legend>
+    <p>Пожалуйста, введите ваши имя и фамилию латиницей, потому что я так хочу! Если не хотите писать настоящие, само собой, можете придумать псевдоним! Вообще пишите там, что хотите, главное латиницей! </p>
+    <p>Слышали ли вы когда-нибудь, чтобы слово <i>колоссально</i> употреблялось в значении <i>очень</i> (например, <i>колоссально теплый</i>)?</p><br>
+    <p><input type="radio" name="haveuheard" value="yes">Да<br></p>
+    <p><input type="radio" name="haveuheard" value="no">Нет<br></p>
+    <p>Употребляете ли вы сами его в таком значении? </p><br>
+    <p><input type="radio" name="woulduse" value="yes">Да<br></p>
+    <p><input type="radio" name="woulduse" value="no">Нет<br></p>
+
+      <p> Имя<br> </p>
+    <p><input type="text" name="name" required pattern='[a-zA-Z]+'><br></p>
+    <p>Фамилия<br></p>
+   <p> <input type="text" name="surname" required pattern='[a-zA-Z]+'><br></p>
+      <p>  Пол <br> </p>
+    <p><input type="radio" name="gender" value="male">Мужской<br></p>
+    <p><input type="radio" name="gender" value="female">Женский<br> </p>
+     <p>Возраст <br></p>
+    <p><input type="radio" name="age" value="lessthan18">до 18<br></p>
+   <p> <input type="radio" name="age" value="18-25">18-25<br></p>
+    <p><input type="radio" name="age" value="26-40">26-40<br></p>
+    <p><input type="radio" name="age" value="41-60">41-59<br> </p> 
+    <p><input type="radio" name="age" value="morethan60">60+<br> </p> 
+    <p><input type="submit" value="Отправить"></p>
+
+    </fieldset>
+</form>
+<p><a href='/stats'>Статистика опроса</a></p>
+</a></p>
+<p><a href='/search'>Поиск по результатам</a></p>
+</body>
+</html>
